@@ -1,10 +1,30 @@
-insert into Veiculo (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descriçao, n_horas, data, custo_total) values (null, null, null, null, 'application/excel', 'Secure phone mount that wirelessly charges your device while driving.', '7:02 AM', '11/6/2025', '$310.70');
-insert into Veiculo (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descriçao, n_horas, data, custo_total) values (null, null, null, null, 'image/tiff', 'Quick oatmeal cups with banana and nut flavor, great for breakfast.', '1:05 PM', '2/26/2026', '$539.33');
-insert into Veiculo (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descriçao, n_horas, data, custo_total) values (null, null, null, null, 'image/x-tiff', 'Comfortable wireless headphones designed for sleeping.', '11:43 PM', '1/10/2026', '$238.56');
-insert into Veiculo (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descriçao, n_horas, data, custo_total) values (null, null, null, null, 'application/msword', 'Variety pack of sticky notes in different colors and sizes.', '5:00 PM', '1/15/2026', '$169.54');
-insert into Veiculo (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descriçao, n_horas, data, custo_total) values (null, null, null, null, 'image/png', 'Professional grooming table with adjustable height.', '7:06 AM', '8/1/2025', '$573.76');
-insert into Veiculo (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descriçao, n_horas, data, custo_total) values (null, null, null, null, 'video/x-msvideo', 'A fitted ribbed knit dress that hugs your curves perfectly.', '3:59 AM', '10/26/2025', '$116.21');
-insert into Veiculo (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descriçao, n_horas, data, custo_total) values (null, null, null, null, 'video/mpeg', 'Instant miso soup mix, just add hot water for a warm meal.', '3:16 AM', '8/17/2025', '$332.83');
-insert into Veiculo (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descriçao, n_horas, data, custo_total) values (null, null, null, null, 'image/tiff', 'Colorful and child-friendly gardening tools for little hands.', '7:50 AM', '1/9/2026', '$501.33');
-insert into Veiculo (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descriçao, n_horas, data, custo_total) values (null, null, null, null, 'audio/x-mpeg-3', 'Rechargeable lantern with multiple brightness settings for outdoors.', '3:06 PM', '11/16/2025', '$979.82');
-insert into Veiculo (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descriçao, n_horas, data, custo_total) values (null, null, null, null, 'video/quicktime', 'Sweet and salty popcorn with sea salt and caramel, a tasty treat.', '6:38 PM', '3/11/2026', '$956.06');
+-- Faturas relacionadas aos clientes e peças (IDs 1 a 10 assumindo inserção sequencial)
+INSERT INTO `Fatura_serviço` (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descricao, n_horas, data, custo_total) 
+VALUES (0, 1, 1, '848-76-7247', 'A', 'S', 7, '2025-11-06', 310);
+
+INSERT INTO `Fatura_serviço` (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descricao, n_horas, data, custo_total) 
+VALUES (0, 2, 2, '634-02-5146', 'I', 'Q', 1, '2026-02-26', 539);
+
+INSERT INTO `Fatura_serviço` (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descricao, n_horas, data, custo_total) 
+VALUES (0, 3, 3, '808-59-1906', 'I', 'C', 11, '2026-01-10', 238);
+
+INSERT INTO `Fatura_serviço` (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descricao, n_horas, data, custo_total) 
+VALUES (0, 4, 4, '207-83-8823', 'A', 'V', 5, '2026-01-15', 169);
+
+INSERT INTO `Fatura_serviço` (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descricao, n_horas, data, custo_total) 
+VALUES (0, 5, 5, '120-08-9255', 'I', 'P', 7, '2025-08-01', 573);
+
+INSERT INTO `Fatura_serviço` (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descricao, n_horas, data, custo_total) 
+VALUES (0, 6, 6, '800-74-6056', 'V', 'A', 4, '2025-10-26', 116);
+
+INSERT INTO `Fatura_serviço` (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descricao, n_horas, data, custo_total) 
+VALUES (0, 7, 7, '524-45-3750', 'V', 'I', 3, '2025-08-17', 332);
+
+INSERT INTO `Fatura_serviço` (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descricao, n_horas, data, custo_total) 
+VALUES (0, 8, 8, '662-41-6672', 'I', 'C', 8, '2026-01-09', 501);
+
+INSERT INTO `Fatura_serviço` (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descricao, n_horas, data, custo_total) 
+VALUES (0, 9, 9, '491-10-4131', 'A', 'R', 3, '2025-11-16', 979);
+
+INSERT INTO `Fatura_serviço` (id_Fatura_serviço, Peças_id_Peças, Mecanico_idMecanico, Cliente_cpf_Cliente, tipo, descricao, n_horas, data, custo_total) 
+VALUES (0, 10, 10, '139-17-5596', 'V', 'S', 6, '2026-03-11', 956);
