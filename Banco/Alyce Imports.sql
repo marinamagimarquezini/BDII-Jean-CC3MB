@@ -43,8 +43,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Fatura_serviço`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Fatura_serviço` (
-  `id_Fatura_serviço` INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS `Fatura_servico` (
+  `id_Fatura_servico` INT NOT NULL AUTO_INCREMENT,
   `Pecas_id_Pecas` INT NOT NULL,
   `Mecanico_idMecanico` INT NOT NULL,
   `Cliente_cpf_Cliente` VARCHAR(45) NOT NULL,
@@ -53,21 +53,21 @@ CREATE TABLE IF NOT EXISTS `Fatura_serviço` (
   `n_horas` INT NULL,
   `data` DATE NULL,
   `custo_total` BIGINT NULL,
-  PRIMARY KEY (`id_Fatura_serviço`, `Peças_id_Peças`, `Mecanico_idMecanico`, `Cliente_cpf_Cliente`),
-  INDEX `fk_Fatura_serviço_Peças_idx` (`Peças_id_Peças` ASC) VISIBLE,
-  INDEX `fk_Fatura_serviço_Cliente1_idx` (`Cliente_cpf_Cliente` ASC) VISIBLE,
-  INDEX `fk_Fatura_serviço_Mecanico1_idx` (`Mecanico_idMecanico` ASC) VISIBLE,
-  CONSTRAINT `fk_Fatura_serviço_Peças`
-    FOREIGN KEY (`Peças_id_Peças`)
-    REFERENCES `Peças` (`id_Peças`)
+  PRIMARY KEY (`id_Fatura_servico`, `Pecas_id_Pecas`, `Mecanico_idMecanico`, `Cliente_cpf_Cliente`),
+  INDEX `fk_Fatura_servico_Peças_idx` (`Pecas_id_Pecas` ASC) VISIBLE,
+  INDEX `fk_Fatura_servico_Cliente1_idx` (`Cliente_cpf_Cliente` ASC) VISIBLE,
+  INDEX `fk_Fatura_servico_Mecanico1_idx` (`Mecanico_idMecanico` ASC) VISIBLE,
+  CONSTRAINT `fk_Fatura_servico_Pecas`
+    FOREIGN KEY (`Pecas_id_Pecas`)
+    REFERENCES `Pecas` (`id_Pecas`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Fatura_serviço_Cliente1`
+  CONSTRAINT `fk_Fatura_servico_Cliente1`
     FOREIGN KEY (`Cliente_cpf_Cliente`)
     REFERENCES `Cliente` (`cpf_Cliente`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Fatura_serviço_Mecanico1`
+  CONSTRAINT `fk_Fatura_servico_Mecanico1`
     FOREIGN KEY (`Mecanico_idMecanico`)
     REFERENCES `Mecanico` (`idMecanico`)
     ON DELETE NO ACTION
