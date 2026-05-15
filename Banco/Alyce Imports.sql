@@ -11,7 +11,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Table `Peças`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Peças` (
+CREATE TABLE IF NOT EXISTS `Pecas` (
   `id_Pecas` INT NOT NULL AUTO_INCREMENT,
   `custo_peca` INT NULL,
   `nome_peca` VARCHAR(45) NULL,
@@ -48,8 +48,8 @@ CREATE TABLE IF NOT EXISTS `Fatura_serviço` (
   `Pecas_id_Pecas` INT NOT NULL,
   `Mecanico_idMecanico` INT NOT NULL,
   `Cliente_cpf_Cliente` VARCHAR(45) NOT NULL,
-  `tipo` CHAR NULL,
-  `descricao` CHAR NULL,
+  `tipo` VARCHAR(10) NULL,
+  `descricao` VARCHAR(90) NULL,
   `n_horas` INT NULL,
   `data` DATE NULL,
   `custo_total` BIGINT NULL,
