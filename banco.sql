@@ -1,4 +1,5 @@
 /* begin table creation */
+/* Vasco da Gama*/
 
 create table department
  (dept_id smallint unsigned not null auto_increment,
