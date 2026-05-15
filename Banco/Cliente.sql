@@ -1,0 +1,10 @@
+insert into Cliente (cpf_Cliente, endereço, nome_cliente, placa_veiculo) values ('848-76-7247', 'Room 1546', 'Rusty', 'YZA8901');
+insert into Cliente (cpf_Cliente, endereço, nome_cliente, placa_veiculo) values ('634-02-5146', 'Room 768', 'Finlay', 'MNO2345');
+insert into Cliente (cpf_Cliente, endereço, nome_cliente, placa_veiculo) values ('808-59-1906', 'Suite 79', 'Giacobo', 'YZA8901');
+insert into Cliente (cpf_Cliente, endereço, nome_cliente, placa_veiculo) values ('207-83-8823', 'PO Box 61729', 'Mariel', 'VWX4567');
+insert into Cliente (cpf_Cliente, endereço, nome_cliente, placa_veiculo) values ('120-08-9255', '15th Floor', 'Kellen', 'YZA8901');
+insert into Cliente (cpf_Cliente, endereço, nome_cliente, placa_veiculo) values ('800-74-6056', 'Suite 46', 'Sheelah', 'STU0123');
+insert into Cliente (cpf_Cliente, endereço, nome_cliente, placa_veiculo) values ('524-45-3750', 'PO Box 1744', 'Thea', 'GHI3456');
+insert into Cliente (cpf_Cliente, endereço, nome_cliente, placa_veiculo) values ('662-41-6672', 'Suite 87', 'Raquela', 'GHI3456');
+insert into Cliente (cpf_Cliente, endereço, nome_cliente, placa_veiculo) values ('491-10-4131', 'Apt 937', 'Ealasaid', 'STU0123');
+insert into Cliente (cpf_Cliente, endereço, nome_cliente, placa_veiculo) values ('139-17-5596', 'Suite 73', 'Rusty', 'DEF9012');

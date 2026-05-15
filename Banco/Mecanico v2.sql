@@ -1,0 +1,10 @@
+insert into Mecanico (idMecanico, nome_Mecanico) values (null, 'Maggy');
+insert into Mecanico (idMecanico, nome_Mecanico) values (null, 'Araldo');
+insert into Mecanico (idMecanico, nome_Mecanico) values (null, 'Noellyn');
+insert into Mecanico (idMecanico, nome_Mecanico) values (null, 'Nathan');
+insert into Mecanico (idMecanico, nome_Mecanico) values (null, 'Koral');
+insert into Mecanico (idMecanico, nome_Mecanico) values (null, 'Bastian');
+insert into Mecanico (idMecanico, nome_Mecanico) values (null, 'Mathilde');
+insert into Mecanico (idMecanico, nome_Mecanico) values (null, 'Hallie');
+insert into Mecanico (idMecanico, nome_Mecanico) values (null, 'Bibbye');
+insert into Mecanico (idMecanico, nome_Mecanico) values (null, 'Manolo');
