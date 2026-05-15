@@ -79,7 +79,7 @@ ENGINE = InnoDB;
 -- Table `Veiculo`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Veiculo` (
-  `placa_veiculo` INT NOT NULL AUTO_INCREMENT,
+  `placa_veiculo` VARCHAR(10) NOT NULL,
   `Cliente_cpf_Cliente` VARCHAR(45) NOT NULL,
   `modelo` VARCHAR(45) NULL,
   `cor` VARCHAR(45) NULL,
