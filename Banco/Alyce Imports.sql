@@ -13,9 +13,9 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Peças` (
   `id_Pecas` INT NOT NULL AUTO_INCREMENT,
-  `custo_peca` VARCHAR(45) NULL,
+  `custo_peca` INT NULL,
   `nome_peca` VARCHAR(45) NULL,
-  PRIMARY KEY (`id_Peças`))
+  PRIMARY KEY (`id_Pecas`))
 ENGINE = InnoDB;
 
 
@@ -26,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `Cliente` (
   `cpf_Cliente` VARCHAR(45) NOT NULL,
   `endereco` VARCHAR(45) NULL,
   `nome_cliente` VARCHAR(45) NULL,
-  `placa_veiculo` VARCHAR(45) NULL,
   PRIMARY KEY (`cpf_Cliente`))
 ENGINE = InnoDB;
 
@@ -81,7 +80,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Veiculo` (
   `placa_veiculo` INT NOT NULL AUTO_INCREMENT,
-  `Cliente_cpf_Cliente` INT NOT NULL,
+  `Cliente_cpf_Cliente` VARCHAR(45) NOT NULL,
   `modelo` VARCHAR(45) NULL,
   `cor` VARCHAR(45) NULL,
   PRIMARY KEY (`placa_veiculo`, `Cliente_cpf_Cliente`),
@@ -98,7 +97,7 @@ ENGINE = InnoDB;
 -- Table `Recepcionista`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Recepcionista` (
-  `id_Recepcionista` INT NOT NULL,
+  `id_Recepcionista` INT NOT NULL AUTO_INCREMENT,
   `nome_recepcionista` VARCHAR(45) NULL,
   PRIMARY KEY (`id_Recepcionista`))
 ENGINE = InnoDB;
@@ -109,7 +108,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Fatura_compra` (
   `id_Fatura_compra` BIGINT NOT NULL AUTO_INCREMENT,
-  `Cliente_cpf_Cliente` INT NOT NULL,
+  `Cliente_cpf_Cliente` VARCHAR(45) NOT NULL,
   `Recepcionista_id_Recepcionista` INT NOT NULL,
   `data` DATE NULL,
   PRIMARY KEY (`id_Fatura_compra`, `Cliente_cpf_Cliente`, `Recepcionista_id_Recepcionista`),
