@@ -1,0 +1,10 @@
+insert into Veiculo (placa_veiculo, Cliente_cpf_Cliente, modelo, cor) values ('ABC-1234', null, 'Electra', 'Crimson');
+insert into Veiculo (placa_veiculo, Cliente_cpf_Cliente, modelo, cor) values ('DEF-4567', null, 'Ram Wagon B150', 'Turquoise');
+insert into Veiculo (placa_veiculo, Cliente_cpf_Cliente, modelo, cor) values ('MNO-7890', null, 'Element', 'Khaki');
+insert into Veiculo (placa_veiculo, Cliente_cpf_Cliente, modelo, cor) values ('MNO-7890', null, 'Murano', 'Orange');
+insert into Veiculo (placa_veiculo, Cliente_cpf_Cliente, modelo, cor) values ('PQR-0123', null, 'Probe', 'Maroon');
+insert into Veiculo (placa_veiculo, Cliente_cpf_Cliente, modelo, cor) values ('QWE-9012', null, 'Golf III', 'Khaki');
+insert into Veiculo (placa_veiculo, Cliente_cpf_Cliente, modelo, cor) values ('QWE-9012', null, 'SLK-Class', 'Crimson');
+insert into Veiculo (placa_veiculo, Cliente_cpf_Cliente, modelo, cor) values ('RST-2345', null, 'Land Cruiser', 'Goldenrod');
+insert into Veiculo (placa_veiculo, Cliente_cpf_Cliente, modelo, cor) values ('MNO-7890', null, 'S-Class', 'Orange');
+insert into Veiculo (placa_veiculo, Cliente_cpf_Cliente, modelo, cor) values ('XYZ-5678', null, 'Mustang', 'Red');
