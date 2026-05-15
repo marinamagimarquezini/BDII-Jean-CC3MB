@@ -12,9 +12,9 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- Table `Peças`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Peças` (
-  `id_Peças` INT NOT NULL AUTO_INCREMENT,
-  `custo_peça` VARCHAR(45) NULL,
-  `nome_peça` VARCHAR(45) NULL,
+  `id_Pecas` INT NOT NULL AUTO_INCREMENT,
+  `custo_peca` VARCHAR(45) NULL,
+  `nome_peca` VARCHAR(45) NULL,
   PRIMARY KEY (`id_Peças`))
 ENGINE = InnoDB;
 
@@ -24,7 +24,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Cliente` (
   `cpf_Cliente` VARCHAR(45) NOT NULL,
-  `endereço` VARCHAR(45) NULL,
+  `endereco` VARCHAR(45) NULL,
   `nome_cliente` VARCHAR(45) NULL,
   `placa_veiculo` VARCHAR(45) NULL,
   PRIMARY KEY (`cpf_Cliente`))
@@ -46,11 +46,11 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Fatura_serviço` (
   `id_Fatura_serviço` INT NOT NULL AUTO_INCREMENT,
-  `Peças_id_Peças` INT NOT NULL,
+  `Pecas_id_Pecas` INT NOT NULL,
   `Mecanico_idMecanico` INT NOT NULL,
   `Cliente_cpf_Cliente` VARCHAR(45) NOT NULL,
   `tipo` CHAR NULL,
-  `descriçao` CHAR NULL,
+  `descricao` CHAR NULL,
   `n_horas` INT NULL,
   `data` DATE NULL,
   `custo_total` BIGINT NULL,
