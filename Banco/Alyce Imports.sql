@@ -41,6 +41,36 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `Recepcionista`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Recepcionista` (
+  `id_Recepcionista` INT NOT NULL AUTO_INCREMENT,
+  `nome_recepcionista` VARCHAR(45) NULL,
+  PRIMARY KEY (`id_Recepcionista`))
+ENGINE = InnoDB;
+
+
+
+-- -----------------------------------------------------
+-- Table `Veiculo`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Veiculo` (
+  `placa_veiculo` VARCHAR(10) NOT NULL,
+  `Cliente_cpf_Cliente` VARCHAR(45) NOT NULL,
+  `modelo` VARCHAR(45) NULL,
+  `cor` VARCHAR(45) NULL,
+  PRIMARY KEY (`placa_veiculo`, `Cliente_cpf_Cliente`),
+  INDEX `fk_Veiculo_Cliente1_idx` (`Cliente_cpf_Cliente` ASC) VISIBLE,
+  CONSTRAINT `fk_Veiculo_Cliente1`
+    FOREIGN KEY (`Cliente_cpf_Cliente`)
+    REFERENCES `Cliente` (`cpf_Cliente`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+
+-- -----------------------------------------------------
 -- Table `Fatura_serviço`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Fatura_servico` (
@@ -72,34 +102,6 @@ CREATE TABLE IF NOT EXISTS `Fatura_servico` (
     REFERENCES `Mecanico` (`idMecanico`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `Veiculo`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Veiculo` (
-  `placa_veiculo` VARCHAR(10) NOT NULL,
-  `Cliente_cpf_Cliente` VARCHAR(45) NOT NULL,
-  `modelo` VARCHAR(45) NULL,
-  `cor` VARCHAR(45) NULL,
-  PRIMARY KEY (`placa_veiculo`, `Cliente_cpf_Cliente`),
-  INDEX `fk_Veiculo_Cliente1_idx` (`Cliente_cpf_Cliente` ASC) VISIBLE,
-  CONSTRAINT `fk_Veiculo_Cliente1`
-    FOREIGN KEY (`Cliente_cpf_Cliente`)
-    REFERENCES `Cliente` (`cpf_Cliente`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `Recepcionista`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Recepcionista` (
-  `id_Recepcionista` INT NOT NULL AUTO_INCREMENT,
-  `nome_recepcionista` VARCHAR(45) NULL,
-  PRIMARY KEY (`id_Recepcionista`))
 ENGINE = InnoDB;
 
 
