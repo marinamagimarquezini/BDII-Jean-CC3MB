@@ -1,0 +1,4 @@
+SELECT 
+    nome_cliente, 
+    cpf_Cliente 
+FROM Cliente;
