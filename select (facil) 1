@@ -1,6 +1,0 @@
-SELECT 
-    nome_peca, 
-    custo_peca 
-FROM Pecas 
-WHERE custo_peca > 600 
-ORDER BY custo_peca DESC;
