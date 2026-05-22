@@ -29,7 +29,7 @@ insert into Veiculo (placa_veiculo, id_Cliente, modelo, cor) values ('CZR-2683',
 insert into Veiculo (placa_veiculo, id_Cliente, modelo, cor) values ('GZZ-5574', 29, 'M5', 'Puce');
 insert into Veiculo (placa_veiculo, id_Cliente, modelo, cor) values ('IRQ-5020', 30, 'Paseo', 'Crimson');
 insert into Veiculo (placa_veiculo, id_Cliente, modelo, cor) values ('VSY-9972', 31, 'Trooper', 'Red');
-insert into Veiculo (placa_veiculo, id_Cliente, modelo, cor) values ('IUV-3523', 32, 'Camaro', 'Maroon');
+insert into Veiculo (placa_veiculo, id_Cliente, modelo, cor) values ('IUV-3523', 32, 'Camaro', 'Yellow');
 insert into Veiculo (placa_veiculo, id_Cliente, modelo, cor) values ('EJE-6034', 33, 'Seville', 'Maroon');
 insert into Veiculo (placa_veiculo, id_Cliente, modelo, cor) values ('PIL-4188', 34, 'A8', 'Teal');
 insert into Veiculo (placa_veiculo, id_Cliente, modelo, cor) values ('JQG-0752', 35, 'Topaz', 'Crimson');
