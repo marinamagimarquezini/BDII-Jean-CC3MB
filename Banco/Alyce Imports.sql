@@ -23,11 +23,11 @@ ENGINE = InnoDB;
 -- Table `Cliente`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Cliente` (
-`idCliente` INT NOT NULL AUTO_INCREMENT,
+`id_Cliente` INT NOT NULL AUTO_INCREMENT,
   `cpf_Cliente` VARCHAR(45) NOT NULL,
   `endereco` VARCHAR(45) NULL,
   `nome_cliente` VARCHAR(45) NULL,
-  PRIMARY KEY (`idCliente`))
+  PRIMARY KEY (`id_Cliente`))
 ENGINE = InnoDB;
 
 
