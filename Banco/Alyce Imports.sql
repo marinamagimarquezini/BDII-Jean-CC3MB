@@ -78,15 +78,15 @@ CREATE TABLE IF NOT EXISTS `Fatura_servico` (
   `id_Fatura_servico` INT NOT NULL AUTO_INCREMENT,
   `Pecas_id_Pecas` INT NOT NULL,
   `Mecanico_idMecanico` INT NOT NULL,
-  `idCliente` INT NOT NULL,
+  `id_Cliente` INT NOT NULL,
   `tipo` VARCHAR(10) NULL,
   `descricao` VARCHAR(90) NULL,
   `n_horas` INT NULL,
   `data` DATE NULL,
   `custo_total` BIGINT NULL,
-  PRIMARY KEY (`id_Fatura_servico`, `Pecas_id_Pecas`, `Mecanico_idMecanico`, `idCliente`),
+  PRIMARY KEY (`id_Fatura_servico`, `Pecas_id_Pecas`, `Mecanico_idMecanico`, `id_Cliente`),
   INDEX `fk_Fatura_servico_Peças_idx` (`Pecas_id_Pecas` ASC) VISIBLE,
-  INDEX `fk_Fatura_servico_Cliente1_idx` (`idCliente` ASC) VISIBLE,
+  INDEX `fk_Fatura_servico_Cliente1_idx` (`id_Cliente` ASC) VISIBLE,
   INDEX `fk_Fatura_servico_Mecanico1_idx` (`Mecanico_idMecanico` ASC) VISIBLE,
   CONSTRAINT `fk_Fatura_servico_Pecas`
     FOREIGN KEY (`Pecas_id_Pecas`)
@@ -94,8 +94,8 @@ CREATE TABLE IF NOT EXISTS `Fatura_servico` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Fatura_servico_Cliente1`
-    FOREIGN KEY (`idCliente`)
-    REFERENCES `Cliente` (`idCliente`)
+    FOREIGN KEY (`id_Cliente`)
+    REFERENCES `Cliente` (`id_Cliente`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Fatura_servico_Mecanico1`
@@ -111,15 +111,15 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Fatura_compra` (
   `id_Fatura_compra` BIGINT NOT NULL AUTO_INCREMENT,
-  `idCliente` INT NOT NULL,
+  `id_Cliente` INT NOT NULL,
   `Recepcionista_id_Recepcionista` INT NOT NULL,
   `data` DATE NULL,
-  PRIMARY KEY (`id_Fatura_compra`, `idCliente`, `Recepcionista_id_Recepcionista`),
-  INDEX `fk_Fatura_compra_Cliente1_idx` (`idCliente` ASC) VISIBLE,
+  PRIMARY KEY (`id_Fatura_compra`, `id_Cliente`, `Recepcionista_id_Recepcionista`),
+  INDEX `fk_Fatura_compra_Cliente1_idx` (`id_Cliente` ASC) VISIBLE,
   INDEX `fk_Fatura_compra_Recepcionista1_idx` (`Recepcionista_id_Recepcionista` ASC) VISIBLE,
   CONSTRAINT `fk_Fatura_compra_Cliente1`
-    FOREIGN KEY (`idCliente`)
-    REFERENCES `Cliente` (`idCliente`)
+    FOREIGN KEY (`id_Cliente`)
+    REFERENCES `Cliente` (`id_Cliente`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Fatura_compra_Recepcionista1`
