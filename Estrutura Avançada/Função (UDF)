@@ -1,0 +1,19 @@
+DELIMITER $$
+CREATE FUNCTION total_gasto_cliente(p_idCliente INT) 
+RETURNS BIGINT
+DETERMINISTIC
+BEGIN
+    DECLARE total_gasto BIGINT;
+    
+    SELECT SUM(custo_total) INTO total_gasto
+    FROM Fatura_servico
+    WHERE idCliente = p_idCliente;
+    
+    RETURN IFNULL(total_gasto, 0);
+END$$
+DELIMITER ;
+
+///////////////////////////////////////
+
+SELECT nome_cliente, calcular_total_gasto_cliente(idCliente) AS total_gasto 
+FROM Cliente;
