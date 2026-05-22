@@ -12,8 +12,3 @@ BEGIN
     RETURN IFNULL(total_gasto, 0);
 END$$
 DELIMITER ;
-
-///////////////////////////////////////
-
-SELECT nome_cliente, calcular_total_gasto_cliente(idCliente) AS total_gasto 
-FROM Cliente;
