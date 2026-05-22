@@ -1,6 +1,6 @@
-SELECT  C.nome_cliente, V.modelo, V.placa_veiculo, fs.tipo, fs.custo_total
-FROM Cliente c
-JOIN Veiculo v
+SELECT  C.nome_cliente, V.modelo, V.placa_veiculo, FS.tipo, FS.custo_total
+FROM Cliente C
+JOIN Veiculo V
 ON C.id_Cliente = V.id_Cliente
-JOIN Fatura_servico fs
-ON C.id_Cliente = fs.id_Cliente;
+JOIN Fatura_servico FS
+ON C.id_Cliente = FS.id_Cliente;
