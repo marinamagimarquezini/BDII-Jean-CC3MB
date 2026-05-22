@@ -57,14 +57,14 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Veiculo` (
   `placa_veiculo` VARCHAR(10) NOT NULL,
-  `idCliente` INT NOT NULL,
+  `id_Cliente` INT NOT NULL,
   `modelo` VARCHAR(45) NULL,
   `cor` VARCHAR(45) NULL,
-  PRIMARY KEY (`placa_veiculo`, `idCliente`),
-  INDEX `fk_Veiculo_Cliente1_idx` (`idCliente` ASC) VISIBLE,
+  PRIMARY KEY (`placa_veiculo`, `id_Cliente`),
+  INDEX `fk_Veiculo_Cliente1_idx` (`id_Cliente` ASC) VISIBLE,
   CONSTRAINT `fk_Veiculo_Cliente1`
-    FOREIGN KEY (`idCliente`)
-    REFERENCES `Cliente` (`idCliente`)
+    FOREIGN KEY (`id_Cliente`)
+    REFERENCES `Cliente` (`id_Cliente`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
