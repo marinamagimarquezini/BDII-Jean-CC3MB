@@ -46,5 +46,5 @@ insert into Fatura_compra (id_Fatura_compra, id_Cliente, Recepcionista_id_Recepc
 insert into Fatura_compra (id_Fatura_compra, id_Cliente, Recepcionista_id_Recepcionista, data) values (null, 46, 1, '25/5/2020');
 insert into Fatura_compra (id_Fatura_compra, id_Cliente, Recepcionista_id_Recepcionista, data) values (null, 47, 3, '11/1/2004');
 insert into Fatura_compra (id_Fatura_compra, id_Cliente, Recepcionista_id_Recepcionista, data) values (null, 48, 2, '27/10/2000');
-insert into Fatura_compra (id_Fatura_compra, idCliente, Recepcionista_id_Recepcionista, data) values (null, 49, 1, '23/3/2007');
-insert into Fatura_compra (id_Fatura_compra, idCliente, Recepcionista_id_Recepcionista, data) values (null, 50, 2, '27/2/2005');
+insert into Fatura_compra (id_Fatura_compra, id_Cliente, Recepcionista_id_Recepcionista, data) values (null, 49, 1, '23/3/2007');
+insert into Fatura_compra (id_Fatura_compra, id_Cliente, Recepcionista_id_Recepcionista, data) values (null, 50, 2, '27/2/2005');
