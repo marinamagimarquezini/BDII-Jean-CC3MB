@@ -1,0 +1,5 @@
+SELECT C.nome_cliente, V.modelo, V.cor
+FROM Cliente c
+JOIN Veiculo v 
+ON C.id_Cliente = V.id_Cliente
+WHERE V.cor = ' Red ';
