@@ -1,0 +1,3 @@
+SELECT *
+FROM Fatura_servico
+WHERE YEAR(data) = 2025;
