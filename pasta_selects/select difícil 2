@@ -1,0 +1,5 @@
+Select  m.nome_Mecanico Count( FS. id_Fatura_Servico) AS quantidade 
+From mecanico  M
+Inner Join fatura_Serviço FS ON M.ide_mecanico = FS.Mecanico_idMecanico
+Grupo by M.nome_Mecanico
+Order by quantidade DESC;
