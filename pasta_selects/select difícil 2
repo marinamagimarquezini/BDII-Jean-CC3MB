@@ -1,5 +1,5 @@
-Select  m.nome_Mecanico Count( FS. id_Fatura_Servico) AS quantidade 
-From mecanico  M
-Inner Join fatura_Serviço FS ON M.ide_mecanico = FS.Mecanico_idMecanico
-Grupo by M.nome_Mecanico
-Order by quantidade DESC;
+SELECT M.nome_Mecanico, COUNT(FS.id_Fatura_servico) AS quantidade 
+FROM Mecanico M
+INNER JOIN Fatura_servico FS ON M.idMecanico = FS.Mecanico_idMecanico
+GROUP BY M.nome_Mecanico
+ORDER BY quantidade DESC;
