@@ -1,0 +1,8 @@
+SELECT 
+    R.nome_recepcionista, 
+    COUNT(FC.id_Fatura_compra) AS total_faturas_geradas
+FROM Recepcionista R
+INNER JOIN Fatura_compra FC 
+    ON R.id_Recepcionista = FC.Recepcionista_id_Recepcionista
+GROUP BY R.nome_recepcionista
+ORDER BY total_faturas_geradas DESC;
