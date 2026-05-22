@@ -13,7 +13,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Pecas` (
   `id_Pecas` INT NOT NULL AUTO_INCREMENT,
-  `custo_peca` INT NULL,
+  `custo_peca` float(10,2) NULL,
   `nome_peca` VARCHAR(45) NULL,
   PRIMARY KEY (`id_Pecas`))
 ENGINE = InnoDB;
