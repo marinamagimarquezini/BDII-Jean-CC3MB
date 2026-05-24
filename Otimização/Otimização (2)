@@ -1,0 +1,14 @@
+SEM INDEX
+SELECT M . nome_Mecanico , COUNT ( FS . id_Fatura_servico ) AS quantidade
+FROM Mecanico M
+INNER JOIN Fatura_servico FS ON M . idMecanico = FS . Mecanico_idMecanico
+GROUP BY M . nome_Mecanico
+ORDER BY quantidade DESC ;
+
+COM INDEX 
+create index idx_fatura_mecanico ON Fatura_Servico ( Mecanico_idMecanico )
+SELECT M . nome_Mecanico , COUNT ( FS . id_Fatura_servico ) AS quantidade
+FROM Mecanico M
+INNER JOIN Fatura_servico FS ON M . idMecanico = FS . Mecanico_idMecanico
+GROUP BY M . nome_Mecanico
+ORDER BY quantidade DESC ;
